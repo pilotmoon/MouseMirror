@@ -1,0 +1,290 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		018B0A76141E0CF20021866C /* Cocoa.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 018B0A75141E0CF20021866C /* Cocoa.framework */; };
+		018B0A80141E0CF20021866C /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = 018B0A7E141E0CF20021866C /* InfoPlist.strings */; };
+		018B0A82141E0CF20021866C /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 018B0A81141E0CF20021866C /* main.m */; };
+		018B0A86141E0CF20021866C /* Credits.rtf in Resources */ = {isa = PBXBuildFile; fileRef = 018B0A84141E0CF20021866C /* Credits.rtf */; };
+		018B0A89141E0CF20021866C /* MouseMirrorAppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 018B0A88141E0CF20021866C /* MouseMirrorAppDelegate.m */; };
+		018B0A8C141E0CF20021866C /* MainMenu.xib in Resources */ = {isa = PBXBuildFile; fileRef = 018B0A8A141E0CF20021866C /* MainMenu.xib */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXFileReference section */
+		018B0A71141E0CF20021866C /* MouseMirror.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = MouseMirror.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		018B0A75141E0CF20021866C /* Cocoa.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Cocoa.framework; path = System/Library/Frameworks/Cocoa.framework; sourceTree = SDKROOT; };
+		018B0A78141E0CF20021866C /* AppKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AppKit.framework; path = System/Library/Frameworks/AppKit.framework; sourceTree = SDKROOT; };
+		018B0A79141E0CF20021866C /* CoreData.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreData.framework; path = System/Library/Frameworks/CoreData.framework; sourceTree = SDKROOT; };
+		018B0A7A141E0CF20021866C /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
+		018B0A7D141E0CF20021866C /* MouseMirror-Info.plist */ = {isa = PBXFileReference; path = "MouseMirror-Info.plist"; sourceTree = "<group>"; };
+		018B0A7F141E0CF20021866C /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
+		018B0A81141E0CF20021866C /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
+		018B0A83141E0CF20021866C /* MouseMirror-Prefix.pch */ = {isa = PBXFileReference; path = "MouseMirror-Prefix.pch"; sourceTree = "<group>"; };
+		018B0A85141E0CF20021866C /* en */ = {isa = PBXFileReference; lastKnownFileType = text.rtf; name = en; path = en.lproj/Credits.rtf; sourceTree = "<group>"; };
+		018B0A87141E0CF20021866C /* MouseMirrorAppDelegate.h */ = {isa = PBXFileReference; path = MouseMirrorAppDelegate.h; sourceTree = "<group>"; };
+		018B0A88141E0CF20021866C /* MouseMirrorAppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = MouseMirrorAppDelegate.m; sourceTree = "<group>"; };
+		018B0A8B141E0CF20021866C /* en */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = en; path = en.lproj/MainMenu.xib; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		018B0A6E141E0CF20021866C /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				018B0A76141E0CF20021866C /* Cocoa.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		018B0A66141E0CF20021866C = {
+			isa = PBXGroup;
+			children = (
+				018B0A7B141E0CF20021866C /* MouseMirror */,
+				018B0A74141E0CF20021866C /* Frameworks */,
+				018B0A72141E0CF20021866C /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		018B0A72141E0CF20021866C /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				018B0A71141E0CF20021866C /* MouseMirror.app */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		018B0A74141E0CF20021866C /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				018B0A75141E0CF20021866C /* Cocoa.framework */,
+				018B0A77141E0CF20021866C /* Other Frameworks */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		018B0A77141E0CF20021866C /* Other Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				018B0A78141E0CF20021866C /* AppKit.framework */,
+				018B0A79141E0CF20021866C /* CoreData.framework */,
+				018B0A7A141E0CF20021866C /* Foundation.framework */,
+			);
+			name = "Other Frameworks";
+			sourceTree = "<group>";
+		};
+		018B0A7B141E0CF20021866C /* MouseMirror */ = {
+			isa = PBXGroup;
+			children = (
+				018B0A87141E0CF20021866C /* MouseMirrorAppDelegate.h */,
+				018B0A88141E0CF20021866C /* MouseMirrorAppDelegate.m */,
+				018B0A8A141E0CF20021866C /* MainMenu.xib */,
+				018B0A7C141E0CF20021866C /* Supporting Files */,
+			);
+			path = MouseMirror;
+			sourceTree = "<group>";
+		};
+		018B0A7C141E0CF20021866C /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				018B0A7D141E0CF20021866C /* MouseMirror-Info.plist */,
+				018B0A7E141E0CF20021866C /* InfoPlist.strings */,
+				018B0A81141E0CF20021866C /* main.m */,
+				018B0A83141E0CF20021866C /* MouseMirror-Prefix.pch */,
+				018B0A84141E0CF20021866C /* Credits.rtf */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		018B0A70141E0CF20021866C /* MouseMirror */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 018B0A8F141E0CF20021866C /* Build configuration list for PBXNativeTarget "MouseMirror" */;
+			buildPhases = (
+				018B0A6D141E0CF20021866C /* Sources */,
+				018B0A6E141E0CF20021866C /* Frameworks */,
+				018B0A6F141E0CF20021866C /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = MouseMirror;
+			productName = MouseMirror;
+			productReference = 018B0A71141E0CF20021866C /* MouseMirror.app */;
+			productType = "com.apple.product-type.application";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		018B0A68141E0CF20021866C /* Project object */ = {
+			isa = PBXProject;
+			buildConfigurationList = 018B0A6B141E0CF20021866C /* Build configuration list for PBXProject "MouseMirror" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+			);
+			mainGroup = 018B0A66141E0CF20021866C;
+			productRefGroup = 018B0A72141E0CF20021866C /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				018B0A70141E0CF20021866C /* MouseMirror */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		018B0A6F141E0CF20021866C /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				018B0A80141E0CF20021866C /* InfoPlist.strings in Resources */,
+				018B0A86141E0CF20021866C /* Credits.rtf in Resources */,
+				018B0A8C141E0CF20021866C /* MainMenu.xib in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		018B0A6D141E0CF20021866C /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				018B0A82141E0CF20021866C /* main.m in Sources */,
+				018B0A89141E0CF20021866C /* MouseMirrorAppDelegate.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXVariantGroup section */
+		018B0A7E141E0CF20021866C /* InfoPlist.strings */ = {
+			isa = PBXVariantGroup;
+			children = (
+				018B0A7F141E0CF20021866C /* en */,
+			);
+			name = InfoPlist.strings;
+			sourceTree = "<group>";
+		};
+		018B0A84141E0CF20021866C /* Credits.rtf */ = {
+			isa = PBXVariantGroup;
+			children = (
+				018B0A85141E0CF20021866C /* en */,
+			);
+			name = Credits.rtf;
+			sourceTree = "<group>";
+		};
+		018B0A8A141E0CF20021866C /* MainMenu.xib */ = {
+			isa = PBXVariantGroup;
+			children = (
+				018B0A8B141E0CF20021866C /* en */,
+			);
+			name = MainMenu.xib;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		018B0A8D141E0CF20021866C /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				ARCHS = "$(ARCHS_STANDARD_64_BIT)";
+				COPY_PHASE_STRIP = NO;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_ENABLE_OBJC_EXCEPTIONS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				GCC_VERSION = com.apple.compilers.llvm.clang.1_0;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_MISSING_PROTOTYPES = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				MACOSX_DEPLOYMENT_TARGET = 10.7;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = macosx;
+			};
+			name = Debug;
+		};
+		018B0A8E141E0CF20021866C /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				ARCHS = "$(ARCHS_STANDARD_64_BIT)";
+				COPY_PHASE_STRIP = YES;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_ENABLE_OBJC_EXCEPTIONS = YES;
+				GCC_VERSION = com.apple.compilers.llvm.clang.1_0;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_MISSING_PROTOTYPES = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				MACOSX_DEPLOYMENT_TARGET = 10.7;
+				SDKROOT = macosx;
+			};
+			name = Release;
+		};
+		018B0A90141E0CF20021866C /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "MouseMirror/MouseMirror-Prefix.pch";
+				INFOPLIST_FILE = "MouseMirror/MouseMirror-Info.plist";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				WRAPPER_EXTENSION = app;
+			};
+			name = Debug;
+		};
+		018B0A91141E0CF20021866C /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "MouseMirror/MouseMirror-Prefix.pch";
+				INFOPLIST_FILE = "MouseMirror/MouseMirror-Info.plist";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				WRAPPER_EXTENSION = app;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		018B0A6B141E0CF20021866C /* Build configuration list for PBXProject "MouseMirror" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				018B0A8D141E0CF20021866C /* Debug */,
+				018B0A8E141E0CF20021866C /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		018B0A8F141E0CF20021866C /* Build configuration list for PBXNativeTarget "MouseMirror" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				018B0A90141E0CF20021866C /* Debug */,
+				018B0A91141E0CF20021866C /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 018B0A68141E0CF20021866C /* Project object */;
+}
