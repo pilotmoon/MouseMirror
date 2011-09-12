@@ -24,14 +24,30 @@ static CGEventRef eventTapCallback (CGEventTapProxy proxy,
                                     void *userInfo)
 {    
 	MouseMirrorTap *tap=(MouseMirrorTap *)userInfo;
-    
-    if (CGEventMaskBit(type)&MOVE_MASK) {
 
+    if (CGEventMaskBit(type)&MOVE_MASK)
+    {
+        CGPoint location=CGEventGetLocation(event);
+        NSLog(@"location is %@", NSStringFromPoint(NSPointFromCGPoint(location)));
+        
+        int64_t dx=CGEventGetIntegerValueField(event, kCGMouseEventDeltaX);
+        int64_t dy=CGEventGetIntegerValueField(event, kCGMouseEventDeltaY);
+        NSLog(@"dx %lli dy %lli" , dx, dy);
+
+        if ([[NSUserDefaults standardUserDefaults] boolForKey:MouseMirrorPrefsMirrorX]) {
+            location.x-=dx;
+        }
+        if ([[NSUserDefaults standardUserDefaults] boolForKey:MouseMirrorPrefsMirrorY]) {
+            location.y-=dy;
+        }   
+        
+        NSLog(@"warping to is %@", NSStringFromPoint(NSPointFromCGPoint(location)));
+        CGWarpMouseCursorPosition(location);  
     }
     else if(type==kCGEventTapDisabledByTimeout)
     { 
         // This can happen sometimes. (Not sure why.) 
-        [tap enableTap:TRUE]; // Just re-enable it.
+        [tap enableTap:TRUE]; // Re-enable it.
     }	
     
 	return event;
@@ -48,7 +64,10 @@ static CGEventRef eventTapCallback (CGEventTapProxy proxy,
 {
 	if(self.active)
 		return;
-
+    
+    // ask HID system to let go of the mouse
+    CGAssociateMouseAndMouseCursorPosition(FALSE);
+    
 	// create mach port
 	port = (CFMachPortRef)CGEventTapCreate(kCGHIDEventTap,
 										   kCGHeadInsertEventTap,
@@ -66,7 +85,9 @@ static CGEventRef eventTapCallback (CGEventTapProxy proxy,
 {
 	if (!self.active)
 		return;
-	
+    
+    CGAssociateMouseAndMouseCursorPosition(TRUE);
+
 	CFRunLoopRemoveSource(CFRunLoopGetMain(), source, kCFRunLoopCommonModes);
 	CFMachPortInvalidate(port);
 	CFRelease(source);
