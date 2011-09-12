@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		018AD3AD141E0F3300B7D902 /* MouseMirrorTap.m in Sources */ = {isa = PBXBuildFile; fileRef = 018AD3AC141E0F3300B7D902 /* MouseMirrorTap.m */; };
 		018B0A76141E0CF20021866C /* Cocoa.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 018B0A75141E0CF20021866C /* Cocoa.framework */; };
 		018B0A80141E0CF20021866C /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = 018B0A7E141E0CF20021866C /* InfoPlist.strings */; };
 		018B0A82141E0CF20021866C /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 018B0A81141E0CF20021866C /* main.m */; };
@@ -16,17 +17,19 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		018AD3AB141E0F3300B7D902 /* MouseMirrorTap.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MouseMirrorTap.h; sourceTree = "<group>"; };
+		018AD3AC141E0F3300B7D902 /* MouseMirrorTap.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MouseMirrorTap.m; sourceTree = "<group>"; };
 		018B0A71141E0CF20021866C /* MouseMirror.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = MouseMirror.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		018B0A75141E0CF20021866C /* Cocoa.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Cocoa.framework; path = System/Library/Frameworks/Cocoa.framework; sourceTree = SDKROOT; };
 		018B0A78141E0CF20021866C /* AppKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AppKit.framework; path = System/Library/Frameworks/AppKit.framework; sourceTree = SDKROOT; };
 		018B0A79141E0CF20021866C /* CoreData.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreData.framework; path = System/Library/Frameworks/CoreData.framework; sourceTree = SDKROOT; };
 		018B0A7A141E0CF20021866C /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
-		018B0A7D141E0CF20021866C /* MouseMirror-Info.plist */ = {isa = PBXFileReference; path = "MouseMirror-Info.plist"; sourceTree = "<group>"; };
+		018B0A7D141E0CF20021866C /* MouseMirror-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "MouseMirror-Info.plist"; sourceTree = "<group>"; };
 		018B0A7F141E0CF20021866C /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
 		018B0A81141E0CF20021866C /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
-		018B0A83141E0CF20021866C /* MouseMirror-Prefix.pch */ = {isa = PBXFileReference; path = "MouseMirror-Prefix.pch"; sourceTree = "<group>"; };
+		018B0A83141E0CF20021866C /* MouseMirror-Prefix.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "MouseMirror-Prefix.pch"; sourceTree = "<group>"; };
 		018B0A85141E0CF20021866C /* en */ = {isa = PBXFileReference; lastKnownFileType = text.rtf; name = en; path = en.lproj/Credits.rtf; sourceTree = "<group>"; };
-		018B0A87141E0CF20021866C /* MouseMirrorAppDelegate.h */ = {isa = PBXFileReference; path = MouseMirrorAppDelegate.h; sourceTree = "<group>"; };
+		018B0A87141E0CF20021866C /* MouseMirrorAppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = MouseMirrorAppDelegate.h; sourceTree = "<group>"; };
 		018B0A88141E0CF20021866C /* MouseMirrorAppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = MouseMirrorAppDelegate.m; sourceTree = "<group>"; };
 		018B0A8B141E0CF20021866C /* en */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = en; path = en.lproj/MainMenu.xib; sourceTree = "<group>"; };
 /* End PBXFileReference section */
@@ -82,6 +85,8 @@
 		018B0A7B141E0CF20021866C /* MouseMirror */ = {
 			isa = PBXGroup;
 			children = (
+				018AD3AB141E0F3300B7D902 /* MouseMirrorTap.h */,
+				018AD3AC141E0F3300B7D902 /* MouseMirrorTap.m */,
 				018B0A87141E0CF20021866C /* MouseMirrorAppDelegate.h */,
 				018B0A88141E0CF20021866C /* MouseMirrorAppDelegate.m */,
 				018B0A8A141E0CF20021866C /* MainMenu.xib */,
@@ -164,6 +169,7 @@
 			files = (
 				018B0A82141E0CF20021866C /* main.m in Sources */,
 				018B0A89141E0CF20021866C /* MouseMirrorAppDelegate.m in Sources */,
+				018AD3AD141E0F3300B7D902 /* MouseMirrorTap.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -248,7 +254,9 @@
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = "MouseMirror/MouseMirror-Prefix.pch";
 				INFOPLIST_FILE = "MouseMirror/MouseMirror-Info.plist";
+				MACOSX_DEPLOYMENT_TARGET = 10.6;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				SDKROOT = macosx10.6;
 				WRAPPER_EXTENSION = app;
 			};
 			name = Debug;
@@ -259,7 +267,9 @@
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = "MouseMirror/MouseMirror-Prefix.pch";
 				INFOPLIST_FILE = "MouseMirror/MouseMirror-Info.plist";
+				MACOSX_DEPLOYMENT_TARGET = 10.6;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				SDKROOT = macosx10.6;
 				WRAPPER_EXTENSION = app;
 			};
 			name = Release;
@@ -283,6 +293,7 @@
 				018B0A91141E0CF20021866C /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
